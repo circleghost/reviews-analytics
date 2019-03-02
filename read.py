@@ -6,5 +6,7 @@ with open('reviews.txt','r') as f:
 		count += 1
 		if count % 1000 == 1:
 			print(len(data))
-print(len(data))
-print(data[0])
+sum_len = 0
+for d in data:
+	sum_len = sum_len + len(d)
+print('平均有', sum_len/len(data), '筆數量')
